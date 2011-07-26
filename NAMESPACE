@@ -1,0 +1,4 @@
+export(char2helloworld)
+export(HWplot)
+exportMethods(helloworld)
+import(ggplot2)

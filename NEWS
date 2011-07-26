@@ -1,0 +1,15 @@
+helloworld 0.1.1
+===========
+* fixed a few bugs in documentation.
+
+helloworld 0.1
+===========
+
+* new 'plotHW' method for making fancy helloworld-ified qplots using
+ggplot2.
+
+
+helloworld 0.01
+===========
+
+* package finally starts working...

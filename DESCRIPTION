@@ -1,0 +1,19 @@
+Package: testpkg
+Maintainer: Paul J. McMurdie <mcmurdie@stanford.edu>
+License: GPL-2
+Title: More higher order functions for R.
+Type: Package
+Author: Paul J. McMurdie <mcmurdie@stanford.edu>
+Description: Prints "Hello World!" and makes a few example
+    plots and classes.
+Version: 0.1.1
+Imports:
+    ggplot2
+Depends:
+    R (>= 2.12.0)
+Collate:
+    'class.r'
+    'initialize.r'
+    'show.r'
+    'helloworld.r'
+    'HWplot.r'
