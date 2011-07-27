@@ -5,7 +5,7 @@
   HWplot(...)
 }
 \arguments{
-  \item{...}{Comma separated list of named arguments to
+  \item{...}{the same arguments that one would provide to
   qplot.}
 }
 \value{
@@ -14,7 +14,14 @@
 \description{
   Create a helloworld-ified plot using qplot arguments.
 }
+\examples{
+library("ggplot2")
+qplot(carat, price, color=color, data = diamonds, facets=cut ~ color,
+main="Price versus carat, according to color and cut")
+HWplot(carat, price, color=color, data = diamonds, facets=cut ~ color,
+main="Price versus carat, according to color and cut")
+}
 \seealso{
-  qplot
+  qplot ggplot2
 }
 

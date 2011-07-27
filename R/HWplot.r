@@ -6,7 +6,13 @@
 #' @return A helloworld-ified qplot. Oh, you'll see.
 #' @seealso qplot ggplot2
 #' @import ggplot2
-#' @export 
+#' @export
+#' @examples
+#' library("ggplot2")
+#' qplot(carat, price, color=color, data = diamonds, facets=cut ~ color,
+#'   main="Price versus carat, according to color and cut")
+#' HWplot(carat, price, color=color, data = diamonds, facets=cut ~ color,
+#'   main="Price versus carat, according to color and cut")
 HWplot <- function(...){
 	#arguments <- list(...)
 	arguments <- as.list(match.call()[-1])	

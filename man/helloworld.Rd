@@ -9,11 +9,13 @@
   A helloworld-ified argument. Oh, you'll see.
 }
 \description{
-  Inherits the "character" class.
+  Inherits the "character" class. And really nothing else.
 
   helloworld-ify the argument.
 }
 \examples{
+getSlots("helloworld")
+
 helloworld("thisismystring")
 helloworld(char2helloworld("thisismystring"))
 helloworld(matrix(0,3,3))
