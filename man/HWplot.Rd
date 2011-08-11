@@ -15,6 +15,7 @@
   Create a helloworld-ified plot using qplot arguments.
 }
 \examples{
+<<<<<<< HEAD
 library("ggplot2")
 qplot(carat, price, color=color, data = diamonds, facets=cut ~ color,
 main="Price versus carat, according to color and cut")
@@ -23,5 +24,11 @@ main="Price versus carat, according to color and cut")
 }
 \seealso{
   qplot ggplot2
+=======
+#
+}
+\seealso{
+  \code{\link{plot}} qplot ggplot2
+>>>>>>> some more tests. Woo!
 }
 

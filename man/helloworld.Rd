@@ -14,8 +14,12 @@
   helloworld-ify the argument.
 }
 \examples{
+<<<<<<< HEAD
 getSlots("helloworld")
 
+=======
+#
+>>>>>>> some more tests. Woo!
 helloworld("thisismystring")
 helloworld(char2helloworld("thisismystring"))
 helloworld(matrix(0,3,3))

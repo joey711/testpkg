@@ -6,7 +6,7 @@ Type: Package
 Author: Paul J. McMurdie <mcmurdie@stanford.edu>
 Description: Prints "Hello World!" and makes a few example
     plots and classes.
-Version: 0.1.1
+Version: 0.1.2
 Imports:
     ggplot2
 Depends:
