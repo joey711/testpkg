@@ -1,11 +1,17 @@
 ##############################################################
 #' helloworld-ify the argument.
 #'
-#' @param x The argument. Duh. Typically a character vector.
+#' @param x The argument. Typically a character vector.
+#'
 #' @return A helloworld-ified argument. Oh, you'll see.
-#' @seealso print show
-#' @keywords hello world cat print
+#' 
 #' @export
+#'
+#' @name helloworld
+#' @aliases helloworld
+#' @docType methods
+#' @rdname helloworld-methods
+#'
 #' @examples
 #' helloworld("thisismystring")
 #' helloworld(char2helloworld("thisismystring"))
@@ -26,12 +32,80 @@ setGeneric("helloworld", function(x, ...){
 	cat("\n")
 	standardGeneric("helloworld")
 })
+#' @name helloworld
+#' @aliases helloworld,helloworld-method
+#' @docType methods
+#' @rdname helloworld-methods
 setMethod("helloworld", "helloworld", function(x){
 	show(x)
 })
+##############################################################
+#' helloworld-ify the argument.
+#'
+#' @param x The argument. Typically a character vector.
+#'
+#' @return A helloworld-ified argument. Oh, you'll see.
+#' 
+#' @export
+#'
+#' @name helloworld
+#' @aliases helloworld
+#' @docType methods
+#' @rdname helloworld-methods
+#'
+#' @examples
+#' helloworld("thisismystring")
+setGeneric("helloworld", function(x, ...){
+	cat("Hello World!")
+	cat("\n")
+	standardGeneric("helloworld")
+})
+##############################################################
+#' @name helloworld
+#' @aliases helloworld,character-method
+#' @docType methods
+#' @rdname helloworld-methods
+setMethod("helloworld", "character", function(x){
+	cat(class(x), fill=TRUE)
+})
+##############################################################
+#' @name helloworld
+#' @aliases helloworld,character-method
+#' @docType methods
+#' @rdname helloworld-methods
 setMethod("helloworld", "character", function(x){
 	cat(class(x))
 })
+##############################################################
+#' helloworld-ify the argument.
+#'
+#' @param x The argument. Typically a character vector.
+#'
+#' @return A helloworld-ified argument. Oh, you'll see.
+#' 
+#' @export
+#'
+#' @name helloworld
+#' @aliases helloworld
+#' @docType methods
+#' @rdname helloworld-methods
+#'
+#' @examples
+#' helloworld("thisismystring")
+setGeneric("helloworld", function(x, ...){
+	cat("Hello World!")
+	cat("\n")
+	standardGeneric("helloworld")
+})
+##############################################################
+#' @name helloworld
+#' @aliases helloworld,character-method
+#' @docType methods
+#' @rdname helloworld-methods
+setMethod("helloworld", "character", function(x){
+	cat(class(x), fill=TRUE)
+})
+##############################################################
 setMethod("helloworld", "matrix", function(x){
 	cat(class(x))
 })
