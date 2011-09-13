@@ -1,4 +1,6 @@
+\docType{methods}
 \name{print}
+\alias{"print,helloworld-method"}
 \alias{print}
 \title{Print the helloworld class to standard output.}
 \arguments{
@@ -18,6 +20,6 @@ show(mychar)
 getMethod("print", "helloworld")
 }
 \seealso{
-  print
+  \code{\link{print}}
 }
 

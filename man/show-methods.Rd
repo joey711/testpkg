@@ -1,4 +1,6 @@
+\docType{methods}
 \name{show}
+\alias{"show,helloworld-method"}
 \alias{show}
 \title{Show the helloworld class to standard output.}
 \arguments{
@@ -19,9 +21,10 @@ mychar <- char2helloworld(c("this","is","my","character","vector"))
 mychar
 print(mychar)
 show(mychar)
+mychar
 getMethod("print", "helloworld")
 }
 \seealso{
-  print
+  \code{\link{print}}
 }
 

@@ -6,14 +6,15 @@ Type: Package
 Author: Paul J. McMurdie <mcmurdie@stanford.edu>
 Description: Prints "Hello World!" and makes a few example
     plots and classes.
-Version: 0.1.2
+Version: 0.2
 Imports:
     ggplot2
 Depends:
-    R (>= 2.12.0)
+    R (>= 2.13.0),
+    methods
 Collate:
-    'class.r'
-    'initialize.r'
     'show.r'
     'helloworld.r'
     'HWplot.r'
+    'allclasses.r'
+    'initialize-methods.r'

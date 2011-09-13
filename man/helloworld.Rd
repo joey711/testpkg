@@ -1,6 +1,6 @@
 \name{helloworld}
 \alias{helloworld}
-\title{Create a class for strings that should print HW to screen.}
+\title{helloworld-ify the argument.}
 \arguments{
   \item{x}{The argument. Duh. Typically a character
   vector.}
@@ -9,17 +9,9 @@
   A helloworld-ified argument. Oh, you'll see.
 }
 \description{
-  Inherits the "character" class. And really nothing else.
-
   helloworld-ify the argument.
 }
 \examples{
-<<<<<<< HEAD
-getSlots("helloworld")
-
-=======
-#
->>>>>>> some more tests. Woo!
 helloworld("thisismystring")
 helloworld(char2helloworld("thisismystring"))
 helloworld(matrix(0,3,3))

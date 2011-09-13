@@ -1,3 +1,14 @@
+v0.2
+===========
+Document a troublesome bug in latest build of roxygen2 that causes method extensions to appear missing because of unnecessary quotes in the \alias{} tag of the associated .Rd file when using the S4 naming convention for method extensions. For example:
+
+\alias{"plot,myclass1-method"}
+
+instead of 
+
+\alias{plot,myclass1-method}
+
+
 helloworld 0.1.1
 ===========
 * fixed a few bugs in documentation.

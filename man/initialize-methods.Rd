@@ -7,7 +7,7 @@
   internally in the `testpkg' package.
 }
 \seealso{
-  initialize
+  \code{\link{initialize}}
 }
 \keyword{internal}
 

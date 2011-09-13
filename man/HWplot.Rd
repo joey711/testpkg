@@ -15,20 +15,13 @@
   Create a helloworld-ified plot using qplot arguments.
 }
 \examples{
-<<<<<<< HEAD
-library("ggplot2")
-qplot(carat, price, color=color, data = diamonds, facets=cut ~ color,
-main="Price versus carat, according to color and cut")
-HWplot(carat, price, color=color, data = diamonds, facets=cut ~ color,
-main="Price versus carat, according to color and cut")
-}
-\seealso{
-  qplot ggplot2
-=======
-#
+## library("ggplot2")
+## qplot(carat, price, color=color, data = diamonds, facets=cut ~ color,
+##  main="Price versus carat, according to color and cut")
+## HWplot(carat, price, color=color, data = diamonds, facets=cut ~ color,
+##  main="Price versus carat, according to color and cut")
 }
 \seealso{
   \code{\link{plot}} qplot ggplot2
->>>>>>> some more tests. Woo!
 }
 

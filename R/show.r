@@ -2,8 +2,16 @@
 #' Print the helloworld class to standard output.
 #'
 #' @param x A \code{helloworld} object.
+#'
 #' @return NULL. Prints to standard out.
-#' @seealso print
+#'
+#' @name print
+#' @aliases print print,helloworld-method
+#' @docType methods
+#' @rdname print-methods
+#' @export
+#'
+#' @seealso \code{\link{print}}
 #' @examples
 #' mychar <- char2helloworld(c("this","is","my","character","vector"))
 #' mychar
@@ -22,14 +30,23 @@ setMethod("print", "helloworld", function(x){
 #' the character data actually contained inside it.
 #'
 #' @param object A \code{helloworld} object.
+#'
 #' @return NULL. print "Hello World!" to screen regardless
 #' the character data actually contained inside \code{object}.
-#' @seealso print
+#'
+#' @name show
+#' @aliases show show,helloworld-method
+#' @docType methods
+#' @rdname show-methods
+#' @export
+#'
+#' @seealso \code{\link{print}}
 #' @examples
 #' mychar <- char2helloworld(c("this","is","my","character","vector"))
 #' mychar
 #' print(mychar)
 #' show(mychar)
+#' mychar
 #' getMethod("print", "helloworld")
 setMethod("show", "helloworld", function(object){
 	cat("Hello World!")
