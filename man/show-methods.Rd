@@ -1,7 +1,7 @@
 \docType{methods}
 \name{show}
-\alias{"show,helloworld-method"}
 \alias{show}
+\alias{show,helloworld-method}
 \title{Show the helloworld class to standard output.}
 \arguments{
   \item{object}{A \code{helloworld} object.}

@@ -1,7 +1,7 @@
 \docType{methods}
 \name{print}
-\alias{"print,helloworld-method"}
 \alias{print}
+\alias{print,helloworld-method}
 \title{Print the helloworld class to standard output.}
 \arguments{
   \item{x}{A \code{helloworld} object.}

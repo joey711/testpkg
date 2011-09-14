@@ -1,4 +1,5 @@
 Package: testpkg
+Version: 0.3.1
 Maintainer: Paul J. McMurdie <mcmurdie@stanford.edu>
 License: GPL-2
 Title: More higher order functions for R.
@@ -6,15 +7,15 @@ Type: Package
 Author: Paul J. McMurdie <mcmurdie@stanford.edu>
 Description: Prints "Hello World!" and makes a few example
     plots and classes.
-Version: 0.2
 Imports:
-    ggplot2
+    igraph (>= 0.5)
 Depends:
     R (>= 2.13.0),
-    methods
+    methods,
+    ggplot2 (>= 0.8)
 Collate:
+    'allclasses.r'
     'show.r'
     'helloworld.r'
     'HWplot.r'
-    'allclasses.r'
     'initialize-methods.r'

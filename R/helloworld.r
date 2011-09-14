@@ -49,7 +49,7 @@ setMethod("helloworld", "ANY", function(x, y, ...){
 	cat(class(x))
 })
 #' @rdname helloworld-methods
-#' @aliases helloworld,character-method
+#' @aliases helloworld,character,ANY-method
 setMethod("helloworld", "character", function(x){
 	show(x)
 })
