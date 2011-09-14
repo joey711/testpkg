@@ -1,14 +1,25 @@
 ##############################################################
-#' helloworld-ify the argument.
+#' The title, in this case: Helloworld-ify the argument.
 #'
-#' @param x The argument. Typically a character vector.
+#' Some additional details about this S4 generic and its 
+#' The extra blank line between this section and the title is
+#' critical for roxygen2 to differentiate the title from the
+#' description section.
+#'
+#' @param x Description of \code{x}. The main argument in this
+#'  example. Most often has such and such properties.
+#'
+#' @param y Description of \code{y}. An argument that is rarely
+#'  used by \code{"helloworld"} methods. 
+#'
+#' @param ... Additional argument list that might not ever
+#'  be used.
 #'
 #' @return A helloworld-ified argument. Oh, you'll see.
 #' 
+#' @seealso \code{\link{print}} and \code{\link{cat}}
+#' 
 #' @export
-#'
-#' @name helloworld
-#' @aliases helloworld
 #' @docType methods
 #' @rdname helloworld-methods
 #'
@@ -27,104 +38,24 @@
 #' mychar
 #' print(mychar)
 #' show(mychar)
-setGeneric("helloworld", function(x, ...){
+setGeneric("helloworld", function(x, y, ...){
 	cat("Hello World!")
 	cat("\n")
 	standardGeneric("helloworld")
 })
-#' @name helloworld
-#' @aliases helloworld,helloworld-method
-#' @docType methods
 #' @rdname helloworld-methods
-setMethod("helloworld", "helloworld", function(x){
+#' @aliases helloworld,ANY,ANY-method
+setMethod("helloworld", "ANY", function(x, y, ...){
+	cat(class(x))
+})
+#' @rdname helloworld-methods
+#' @aliases helloworld,character-method
+setMethod("helloworld", "character", function(x){
 	show(x)
 })
-##############################################################
-#' helloworld-ify the argument.
-#'
-#' @param x The argument. Typically a character vector.
-#'
-#' @return A helloworld-ified argument. Oh, you'll see.
-#' 
-#' @export
-#'
-#' @name helloworld
-#' @aliases helloworld
-#' @docType methods
 #' @rdname helloworld-methods
-#'
-#' @examples
-#' helloworld("thisismystring")
-setGeneric("helloworld", function(x, ...){
-	cat("Hello World!")
-	cat("\n")
-	standardGeneric("helloworld")
-})
-##############################################################
-#' @name helloworld
-#' @aliases helloworld,character-method
-#' @docType methods
-#' @rdname helloworld-methods
-setMethod("helloworld", "character", function(x){
-	cat(class(x), fill=TRUE)
-})
-##############################################################
-#' @name helloworld
-#' @aliases helloworld,character-method
-#' @docType methods
-#' @rdname helloworld-methods
-setMethod("helloworld", "character", function(x){
-	cat(class(x))
-})
-##############################################################
-#' helloworld-ify the argument.
-#'
-#' @param x The argument. Typically a character vector.
-#'
-#' @return A helloworld-ified argument. Oh, you'll see.
-#' 
-#' @export
-#'
-#' @name helloworld
-#' @aliases helloworld
-#' @docType methods
-#' @rdname helloworld-methods
-#'
-#' @examples
-#' helloworld("thisismystring")
-setGeneric("helloworld", function(x, ...){
-	cat("Hello World!")
-	cat("\n")
-	standardGeneric("helloworld")
-})
-##############################################################
-#' @name helloworld
-#' @aliases helloworld,character-method
-#' @docType methods
-#' @rdname helloworld-methods
-setMethod("helloworld", "character", function(x){
-	cat(class(x), fill=TRUE)
-})
-##############################################################
-setMethod("helloworld", "matrix", function(x){
-	cat(class(x))
-})
-setMethod("helloworld", "numeric", function(x){
-	cat(class(x))
-})
-setMethod("helloworld", "list", function(x){
-	cat(class(x))
-})
-setMethod("helloworld", "logical", function(x){
-	cat(class(x))
-})
-setMethod("helloworld", "function", function(x){
-	cat(class(x))
-})
-setMethod("helloworld", "integer", function(x){
-	cat(class(x))
-})
-setMethod("helloworld", "array", function(x){
-	cat(class(x))
+#' @aliases helloworld,character,character-method
+setMethod("helloworld", c("character", "character"), function(x, y){
+	show(x)
 })
 ##############################################################
