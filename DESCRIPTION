@@ -1,5 +1,6 @@
 Package: testpkg
-Version: 0.3.4
+Version: 0.3.5
+Date: 2011-10-26
 Maintainer: Paul J. McMurdie <mcmurdie@stanford.edu>
 License: GPL-2
 Title: More higher order functions for R.
@@ -10,6 +11,7 @@ Description: Prints "Hello World!" and makes a few example
 Imports:
     igraph (>= 0.5),
     vegan (>= 2.0),
+    multtest (>= 2.8),
     phylobase (>= 0.6)
 Depends:
     R (>= 2.13.0),

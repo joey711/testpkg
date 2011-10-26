@@ -28,6 +28,7 @@
 #' @import phylobase
 #' @import vegan
 #' @import igraph
+#' @import multtest
 #'
 #' @examples
 #' helloworld("thisismystring")
