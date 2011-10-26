@@ -4,6 +4,7 @@
 \alias{helloworld,ANY,ANY-method}
 \alias{helloworld,character,ANY-method}
 \alias{helloworld,character,character-method}
+\alias{helloworld,phylo4,ANY-method}
 \title{The title, in this case: Helloworld-ify the argument.}
 \arguments{
   \item{x}{Description of \code{x}. The main argument in

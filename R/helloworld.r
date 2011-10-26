@@ -6,6 +6,8 @@
 #' critical for roxygen2 to differentiate the title from the
 #' description section.
 #'
+#' @usage helloworld(x, y, ...)
+#'
 #' @param x Description of \code{x}. The main argument in this
 #'  example. Most often has such and such properties.
 #'
@@ -22,6 +24,8 @@
 #' @export
 #' @docType methods
 #' @rdname helloworld-methods
+#'
+#' @import phylobase
 #'
 #' @examples
 #' helloworld("thisismystring")
@@ -56,6 +60,12 @@ setMethod("helloworld", "character", function(x){
 #' @rdname helloworld-methods
 #' @aliases helloworld,character,character-method
 setMethod("helloworld", c("character", "character"), function(x, y){
+	show(x)
+})
+#' @rdname helloworld-methods
+#' @aliases helloworld,phylo4,ANY-method
+setMethod("helloworld", "phylo4", function(x){
+	cat("Hello World! This is a tree:", fill=TRUE)
 	show(x)
 })
 ##############################################################
