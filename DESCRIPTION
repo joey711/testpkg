@@ -1,5 +1,5 @@
 Package: testpkg
-Version: 0.3.3
+Version: 0.3.4
 Maintainer: Paul J. McMurdie <mcmurdie@stanford.edu>
 License: GPL-2
 Title: More higher order functions for R.
