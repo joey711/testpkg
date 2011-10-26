@@ -28,7 +28,8 @@
 #' @import phylobase
 #' @import vegan
 #' @import igraph
-#' @import multtest
+#' @importFrom multtest mt.maxT
+#' @importFrom multtest mt.minP
 #'
 #' @examples
 #' helloworld("thisismystring")
