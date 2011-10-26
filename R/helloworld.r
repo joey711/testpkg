@@ -26,6 +26,7 @@
 #' @rdname helloworld-methods
 #'
 #' @import phylobase
+#' @import vegan
 #'
 #' @examples
 #' helloworld("thisismystring")

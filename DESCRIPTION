@@ -1,5 +1,5 @@
 Package: testpkg
-Version: 0.3.2
+Version: 0.3.3
 Maintainer: Paul J. McMurdie <mcmurdie@stanford.edu>
 License: GPL-2
 Title: More higher order functions for R.
@@ -9,6 +9,7 @@ Description: Prints "Hello World!" and makes a few example
     plots and classes.
 Imports:
     igraph (>= 0.5),
+    vegan (>= 2.0),
     phylobase (>= 0.6)
 Depends:
     R (>= 2.13.0),
