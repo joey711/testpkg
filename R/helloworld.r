@@ -7,6 +7,8 @@
 #' critical for roxygen2 to differentiate the title from the
 #' description section.
 #'
+#' @usage helloworld(x, y, ...)
+#'
 #' @param x Description of \code{x}. The main argument in this
 #'  example. Most often has such and such properties.
 #'
