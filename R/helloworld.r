@@ -1,4 +1,3 @@
-# # # # #' @usage helloworld(x, y, ...)
 ##############################################################
 #' The title, in this case: Helloworld-ify the argument.
 #'
@@ -6,8 +5,6 @@
 #' The extra blank line between this section and the title is
 #' critical for roxygen2 to differentiate the title from the
 #' description section.
-#'
-#' @usage helloworld(x, y, ...)
 #'
 #' @param x Description of \code{x}. The main argument in this
 #'  example. Most often has such and such properties.
@@ -17,6 +14,8 @@
 #'
 #' @param ... Additional argument list that might not ever
 #'  be used.
+#'
+#' @usage helloworld(x, y, ...)
 #'
 #' @return A helloworld-ified argument. Oh, you'll see.
 #' 
