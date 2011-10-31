@@ -1,5 +1,5 @@
 Package: testpkg
-Version: 0.3.9
+Version: 0.3.10
 Date: 2011-10-31
 Maintainer: Paul J. McMurdie <mcmurdie@stanford.edu>
 License: AGPL-3
@@ -23,3 +23,4 @@ Collate:
     'helloworld.r'
     'HWplot.r'
     'initialize-methods.r'
+    'sillyadd.r'
