@@ -5,7 +5,7 @@
 \alias{helloworld,character,ANY-method}
 \alias{helloworld,character,character-method}
 \alias{helloworld,phylo4,ANY-method}
-\title{The title, in this case: Helloworld-ify the argument.}
+\title{# # # #}
 \arguments{
   \item{x}{Description of \code{x}. The main argument in
   this example. Most often has such and such properties.}
@@ -20,10 +20,7 @@
   A helloworld-ified argument. Oh, you'll see.
 }
 \description{
-  Some additional details about this S4 generic and its The
-  extra blank line between this section and the title is
-  critical for roxygen2 to differentiate the title from the
-  description section.
+  # # # #
 }
 \examples{
 helloworld("thisismystring")

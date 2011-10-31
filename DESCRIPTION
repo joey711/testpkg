@@ -1,6 +1,6 @@
 Package: testpkg
-Version: 0.3.6
-Date: 2011-10-26
+Version: 0.3.7
+Date: 2011-10-31
 Maintainer: Paul J. McMurdie <mcmurdie@stanford.edu>
 License: GPL-2
 Title: More higher order functions for R.
